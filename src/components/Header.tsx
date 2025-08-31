@@ -2,11 +2,13 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="w-full border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+    <header className="w-full border-b border-border/30 bg-card/80 backdrop-blur-xl sticky top-0 z-50 shadow-soft">
+      <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-foreground">TAG</div>
+            <div className="text-3xl font-bold">
+              <span className="gradient-text">TAG</span>
+            </div>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -43,10 +45,10 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="hidden md:inline-flex">
+            <Button variant="ghost" className="hidden md:inline-flex hover:bg-primary/10 hover:text-primary transition-smooth">
               Sign In
             </Button>
-            <Button>
+            <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent border-0 shadow-medium hover:shadow-glow transition-smooth px-6">
               Get Started
             </Button>
           </div>
