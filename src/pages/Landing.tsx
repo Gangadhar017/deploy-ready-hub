@@ -11,7 +11,7 @@ const Landing = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section id="home" className="py-20 px-4">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
             Cloud-based Online IDE
@@ -62,6 +62,68 @@ const Landing = () => {
               title="Sandboxed Execution"
               description="Timeouts and resource limits"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Documentation Section */}
+      <section id="docs" className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-4xl font-bold text-center text-foreground mb-16">
+            Documentation
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Getting Started</h3>
+                <p className="text-muted-foreground mb-4">
+                  Start coding immediately with our cloud-based IDE. No setup required.
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• Create your account</li>
+                  <li>• Choose your programming language</li>
+                  <li>• Start coding in your browser</li>
+                  <li>• Run and test your code instantly</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Supported Languages</h3>
+                <div className="grid grid-cols-2 gap-2 text-muted-foreground">
+                  <div>• Python 3.9+</div>
+                  <div>• Java 17</div>
+                  <div>• JavaScript (Node.js)</div>
+                  <div>• TypeScript</div>
+                  <div>• C++</div>
+                  <div>• Go</div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Features</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• Syntax highlighting</li>
+                  <li>• Auto-completion</li>
+                  <li>• Real-time collaboration</li>
+                  <li>• Version control integration</li>
+                  <li>• Package management</li>
+                  <li>• Terminal access</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold text-foreground mb-4">API Reference</h3>
+                <p className="text-muted-foreground mb-4">
+                  Integrate with our RESTful API for advanced functionality.
+                </p>
+                <Button variant="outline">
+                  View API Docs
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
