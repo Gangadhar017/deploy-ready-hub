@@ -5,6 +5,7 @@ import FeatureCard from "@/components/FeatureCard";
 import { Cloud, Zap, Database, Shield } from "lucide-react";
 
 const Landing = () => {
+  console.log("Landing component rendering");
   return (
     <div className="min-h-screen bg-background">
       <Header />
